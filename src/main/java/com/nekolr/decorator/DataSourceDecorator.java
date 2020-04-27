@@ -5,19 +5,19 @@ package com.nekolr.decorator;
  */
 public class DataSourceDecorator implements DataSource {
 
-    private DataSource dataSource;
+    private DataSource wrappedDataSource;
 
     public DataSourceDecorator(DataSource dataSource) {
-        this.dataSource = dataSource;
+        this.wrappedDataSource = dataSource;
     }
 
     @Override
     public String readData() {
-        return dataSource.readData();
+        return wrappedDataSource.readData();
     }
 
     @Override
     public void writeData(String data) {
-        dataSource.writeData(data);
+        wrappedDataSource.writeData(data);
     }
 }

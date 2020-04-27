@@ -1,5 +1,5 @@
 # 装饰器模式
-![装饰器模式](https://github.com/nekolr/design-patterns/tree/master/media/decorator.png)
+![装饰器模式](https://github.com/nekolr/design-patterns/blob/master/media/decorator.png)
 
 # 适用性
 如果希望在无需修改代码的情况下即可使用对象，同时还可以在运行时为对象新增额外的行为，那么可以使用装饰器模式。

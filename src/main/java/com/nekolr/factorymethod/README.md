@@ -3,9 +3,15 @@
 
 如果一个模块仅需要一个工厂类，那么提供工厂方法的抽象类或接口就没有必要存在，直接通过一个工厂类的静态方法产生对象即可，这就是简单工厂模式（也叫做静态工厂模式）。单一工厂的工厂方法模式适合那些初始化对象的过程比较简单且一致的情况。如果项目比较复杂，并且初始化一个对象的过程比较繁琐，那么将所有的产品类都放到一个工厂方法中进行初始化会使代码结构不清晰。比如一个产品类有五个具体实现，每个实现的初始化过程（包括 new 对象以及一些对象的设置）都不相同且复杂，那么将它们都写在一个工厂方法中，该方法势必庞大且复杂，此时为每个产品都定义一个工厂类就比较合适，这就是多工厂的工厂方法模式。
 
+***
+
 ![单一工厂方法模式](https://github.com/nekolr/design-patterns/blob/master/media/single_factorymethod_example.png)
 
+***
+
 ![多工厂的工厂方法模式](https://github.com/nekolr/design-patterns/blob/master/media/multi_factorymethod_example.png)
+
+***
 
 ![简单工厂方法模式](https://github.com/nekolr/design-patterns/blob/master/media/simple_factorymethod_example.png)
 
